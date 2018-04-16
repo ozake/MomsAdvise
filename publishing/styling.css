@@ -1,0 +1,373 @@
+/*초기화 소스*/
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+
+* {
+	box-sizing: border-box;
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 500;
+	letter-spacing: -0.3px;
+}
+
+/* common */
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, form, fieldset, legend, input, textarea, button, select, img {
+	margin: 0;
+	padding: 0;
+}
+body, input, textarea, select, button, table {
+	color:rgba(51,51,51,1);
+	letter-spacing: -0.3px; 
+	box-shadow: none;
+	border: none;
+}
+button{
+	background: none;
+	cursor: pointer;
+}
+select:focus, button:focus, textarea:focus{
+	outline: 0;
+}
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	background: transparent;
+	vertical-align: middle;
+	word-break: break-all;
+	font-size: 100%;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img, fieldset {
+	border: 0;
+}
+ul {
+	list-style: none;
+}
+address, em {
+	color:rgb(51,51,51);
+	font-style: normal;
+}
+a {
+	color:rgb(51,51,51);
+	text-decoration: none;
+}
+a:hover, a:active, a:focus {
+	text-decoration: none;
+}
+hr, legend, caption {
+	display: none;
+}
+a, input {
+	outline: none;
+}
+.styling_box{
+	margin: 0 auto;
+	margin-bottom: 10px;
+	width: 342px;
+	height: 342px;
+	border: 1px solid black;
+}
+.styling_wrap{
+	position: relative;
+	padding: 6%;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.styling_wrap>div{
+	overflow: hidden;
+	position: absolute;
+	background: none !important;
+}
+.styling_wrap>div img{
+	height: 100%;
+}
+
+.outer{
+	width: 36%;
+	height: 50%;
+	background: pink;
+}
+.top{
+	width: 36%;
+	height: 44%;
+	background: red;
+	z-index: 10;
+}
+.top2{
+	width: 30%;
+	height: 60%;
+	background: red;
+	z-index: 10;
+}
+.bottom{
+	top: 44%;
+	width: 36%;
+	height: 50%;
+	background: blue;
+	z-index: 8;
+}
+.bottom2{
+	top: 44%;
+	width: 36%;
+	height: 28%;
+	background: blue;
+	z-index: 8;
+}
+.bag{
+	width: 26%;
+	height: 34%;
+	background: yellow;
+	z-index: 8;
+}
+.acc{
+	width: 26%;
+	height: 34%;
+	background: green;
+	z-index: 8;
+}
+.acc2{
+	width: 26%;
+	height: 16%;
+	background: purple;
+	z-index: 8;
+}
+
+/* type_1 */
+.type_1 .outer{
+	left: 6%;
+}
+.type_1 .top{
+	left: 25%;
+}
+.type_1 .bottom{
+	left: 25%;
+	bottom: 6%;
+}
+.type_1 .bag{
+	right: 6%;
+}
+.type_1 .acc{
+	right: 6%;
+	bottom: 6%;
+}
+/* //type_1 */
+
+/* type_2 */
+.type_2 .top{
+	left: 18%;
+}
+.type_2 .bottom{
+	left: 18%;
+	bottom: 6%;
+}
+.type_2 .bag{
+	right: 18%;
+}
+.type_2 .acc{
+	right: 18%;
+	bottom: 6%;
+}
+/* //type_2 */
+
+/* type_3 */
+.type_3 .outer{
+	left: 8%;
+}
+.type_3 .top2{
+	left: 30%;
+}
+.type_3 .bag{
+	right: 12%;
+}
+.type_3 .acc{
+	right: 12%;
+	bottom: 6%;
+}
+/* //type_3 */
+
+/* type_4 */
+.type_4 .top2{
+	left: 20%;
+}
+.type_4 .bag{
+	right: 20%;
+}
+.type_4 .acc{
+	right: 20%;
+	bottom: 6%;
+}
+/* //type_4 */
+
+/* type_5 */
+.type_5 .outer{
+	left: 6%;
+}
+.type_5 .top{
+	left: 28%;
+}
+.type_5 .bottom2{
+	left: 28%;
+	bottom: 6%;
+}
+.type_5 .bag{
+	right: 6%;
+}
+.type_5 .acc{
+	right: 6%;
+	bottom: 6%;
+}
+/* //type_5 */
+
+/* type_6 */
+.type_6 .top{
+	left: 18%;
+}
+.type_6 .bottom2{
+	left: 18%;
+	bottom: 6%;
+}
+.type_6 .bag{
+	right: 18%;
+}
+.type_6 .acc{
+	right: 18%;
+	bottom: 6%;
+}
+/* //type_6 */
+
+/* type_7 */
+.type_7 .outer{
+	left: 6%;
+}
+.type_7 .top{
+	left: 28%;
+}
+.type_7 .bottom{
+	left: 28%;
+	bottom: 6%;
+}
+.type_7 .bag{
+	top: 24%;
+	right: 6%;
+}
+.type_7 .acc{
+	right: 6%;
+	bottom: 6%;
+}
+.type_7 .acc2{
+	top: 6%;
+	right: 6%;
+}
+/* //type_7 */
+
+/* type_8 */
+.type_8 .top{
+	left: 18%;
+}
+.type_8 .bottom{
+	left: 18%;
+	bottom: 6%;
+}
+.type_8 .bag{
+	top: 24%;
+	right: 18%;
+}
+.type_8 .acc{
+	right: 18%;
+	bottom: 6%;
+}
+.type_8 .acc2{
+	top: 6%;
+	right: 18%;
+}
+/* //type_8 */
+
+/* type_9 */
+.type_9 .outer{
+	left: 8%;
+}
+.type_9 .top2{
+	left: 30%;
+}
+.type_9 .bag{
+	top: 24%;
+	right: 12%;
+}
+.type_9 .acc{
+	right: 12%;
+	bottom: 6%;
+}
+.type_9 .acc2{
+	top: 6%;
+	right: 12%;
+}
+/* //type_9 */
+
+/* type_10 */
+.type_10 .top2{
+	left: 20%;
+}
+.type_10 .bag{
+	top: 24%;
+	right: 20%;
+}
+.type_10 .acc{
+	right: 20%;
+	bottom: 6%;
+}
+.type_10 .acc2{
+	top: 6%;
+	right: 20%;
+}
+/* //type_10 */
+
+/* type_11 */
+.type_11 .outer{
+	left: 6%;
+}
+.type_11 .top{
+	left: 28%;
+}
+.type_11 .bottom2{
+	left: 28%;
+	bottom: 6%;
+}
+.type_11 .bag{
+	top: 24%;
+	right: 6%;
+}
+.type_11 .acc{
+	right: 6%;
+	bottom: 6%;
+}
+.type_11 .acc2{
+	top: 6%;
+	right: 6%;
+}
+/* //type_11 */
+
+/* type_12 */
+.type_12 .top{
+	left: 18%;
+}
+.type_12 .bottom2{
+	left: 18%;
+	bottom: 6%;
+}
+.type_12 .bag{
+	top: 24%;
+	right: 18%;
+}
+.type_12 .acc{
+	right: 18%;
+	bottom: 6%;
+}
+.type_12 .acc2{
+	top: 6%;
+	right: 18%;
+}
+/* //type_12 */
